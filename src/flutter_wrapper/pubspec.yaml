@@ -1,0 +1,43 @@
+name: sai_sports_platform
+description: Flutter wrapper for SAI Sports Platform web application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.4.2
+  webview_flutter_web: ^0.2.2+1
+  url_launcher: ^6.2.1
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+  window_manager: ^0.3.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  # App icon configuration
+  assets:
+    - assets/icon/
+    - assets/images/
+
+  # Desktop configuration
+  windows:
+    application-id: com.sai.sports.platform
+    executable: sai_sports_platform
+  
+  macos:
+    application-id: com.sai.sports.platform
+    executable: sai_sports_platform
+    
+  linux:
+    application-id: com.sai.sports.platform
+    executable: sai_sports_platform
